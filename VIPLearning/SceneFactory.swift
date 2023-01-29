@@ -18,6 +18,7 @@ class MainSceneFactory: SceneFactory {
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
+    
     func start() {
         
     }
