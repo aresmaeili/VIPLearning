@@ -16,8 +16,10 @@ protocol MahdiConfigurator {
 
 final class MahdiDefaultConfigurator {
     private var sceneFactory: SceneFactory
-    init(sceneFactory: SceneFactory) {
+    private var network: NetworkProtocol
+    init(sceneFactory: SceneFactory, network: NetworkProtocol) {
         self.sceneFactory = sceneFactory
+        self.network = network
     }
 }
 
@@ -27,7 +29,7 @@ extension MahdiDefaultConfigurator: MahdiConfigurator {
     func configure() -> MahdiViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController: MahdiViewController = storyboard.instantiateViewController(withIdentifier: "MahdiViewController") as! MahdiViewController
-        let worker = MahdiWorker()
+        let worker = MahdiWorker(service: network)
         let interactor = MahdiInteractor()
         let presenter = MahdiPresenter(viewController: viewController)
         let router = MahdiRouter(sceneFactory: sceneFactory, viewController: viewController)

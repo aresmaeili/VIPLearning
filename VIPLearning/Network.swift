@@ -9,3 +9,7 @@ import Foundation
 protocol NetworkProtocol {
     
 }
+
+class Network: NetworkProtocol {
+    
+}

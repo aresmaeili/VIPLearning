@@ -14,6 +14,7 @@ protocol SceneFactory {
 
 class MainSceneFactory: SceneFactory {
     var navigationController: UINavigationController
+    var network: NetworkProtocol = Network()
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
