@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		179EE89E2986586F002D0F02 /* MahdiPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179EE8972986586F002D0F02 /* MahdiPresenter.swift */; };
+		179EE89F2986586F002D0F02 /* MahdiWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179EE8982986586F002D0F02 /* MahdiWorker.swift */; };
+		179EE8A02986586F002D0F02 /* MahdiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179EE8992986586F002D0F02 /* MahdiRouter.swift */; };
+		179EE8A12986586F002D0F02 /* MahdiModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179EE89A2986586F002D0F02 /* MahdiModels.swift */; };
+		179EE8A22986586F002D0F02 /* MahdiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179EE89B2986586F002D0F02 /* MahdiViewController.swift */; };
+		179EE8A32986586F002D0F02 /* MahdiInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179EE89C2986586F002D0F02 /* MahdiInteractor.swift */; };
+		179EE8A42986586F002D0F02 /* MahdiConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179EE89D2986586F002D0F02 /* MahdiConfigurator.swift */; };
+		179EE8A62986588A002D0F02 /* SceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179EE8A52986588A002D0F02 /* SceneFactory.swift */; };
+		179EE8A929866005002D0F02 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179EE8A829866005002D0F02 /* Network.swift */; };
 		BBA9507D2986541400CFA1DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA9507C2986541400CFA1DC /* AppDelegate.swift */; };
 		BBA9507F2986541400CFA1DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA9507E2986541400CFA1DC /* SceneDelegate.swift */; };
 		BBA950812986541400CFA1DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA950802986541400CFA1DC /* ViewController.swift */; };
@@ -16,6 +25,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		179EE8972986586F002D0F02 /* MahdiPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MahdiPresenter.swift; sourceTree = "<group>"; };
+		179EE8982986586F002D0F02 /* MahdiWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MahdiWorker.swift; sourceTree = "<group>"; };
+		179EE8992986586F002D0F02 /* MahdiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MahdiRouter.swift; sourceTree = "<group>"; };
+		179EE89A2986586F002D0F02 /* MahdiModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MahdiModels.swift; sourceTree = "<group>"; };
+		179EE89B2986586F002D0F02 /* MahdiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MahdiViewController.swift; sourceTree = "<group>"; };
+		179EE89C2986586F002D0F02 /* MahdiInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MahdiInteractor.swift; sourceTree = "<group>"; };
+		179EE89D2986586F002D0F02 /* MahdiConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MahdiConfigurator.swift; sourceTree = "<group>"; };
+		179EE8A52986588A002D0F02 /* SceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFactory.swift; sourceTree = "<group>"; };
+		179EE8A829866005002D0F02 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		BBA950792986541400CFA1DC /* VIPLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBA9507C2986541400CFA1DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBA9507E2986541400CFA1DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +55,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		179EE89629865840002D0F02 /* Mahdi */ = {
+			isa = PBXGroup;
+			children = (
+				179EE8972986586F002D0F02 /* MahdiPresenter.swift */,
+				179EE8982986586F002D0F02 /* MahdiWorker.swift */,
+				179EE8992986586F002D0F02 /* MahdiRouter.swift */,
+				179EE89A2986586F002D0F02 /* MahdiModels.swift */,
+				179EE89B2986586F002D0F02 /* MahdiViewController.swift */,
+				179EE89C2986586F002D0F02 /* MahdiInteractor.swift */,
+				179EE89D2986586F002D0F02 /* MahdiConfigurator.swift */,
+			);
+			path = Mahdi;
+			sourceTree = "<group>";
+		};
 		BBA950702986541400CFA1DC = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +88,8 @@
 		BBA9507B2986541400CFA1DC /* VIPLearning */ = {
 			isa = PBXGroup;
 			children = (
+				179EE89629865840002D0F02 /* Mahdi */,
+				179EE8A52986588A002D0F02 /* SceneFactory.swift */,
 				BBA9507C2986541400CFA1DC /* AppDelegate.swift */,
 				BBA9507E2986541400CFA1DC /* SceneDelegate.swift */,
 				BBA950802986541400CFA1DC /* ViewController.swift */,
@@ -63,6 +97,7 @@
 				BBA950852986541500CFA1DC /* Assets.xcassets */,
 				BBA950872986541500CFA1DC /* LaunchScreen.storyboard */,
 				BBA9508A2986541500CFA1DC /* Info.plist */,
+				179EE8A829866005002D0F02 /* Network.swift */,
 			);
 			path = VIPLearning;
 			sourceTree = "<group>";
@@ -138,8 +173,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				179EE8A42986586F002D0F02 /* MahdiConfigurator.swift in Sources */,
+				179EE8A62986588A002D0F02 /* SceneFactory.swift in Sources */,
+				179EE8A929866005002D0F02 /* Network.swift in Sources */,
 				BBA950812986541400CFA1DC /* ViewController.swift in Sources */,
+				179EE89F2986586F002D0F02 /* MahdiWorker.swift in Sources */,
+				179EE8A12986586F002D0F02 /* MahdiModels.swift in Sources */,
+				179EE8A32986586F002D0F02 /* MahdiInteractor.swift in Sources */,
+				179EE8A02986586F002D0F02 /* MahdiRouter.swift in Sources */,
 				BBA9507D2986541400CFA1DC /* AppDelegate.swift in Sources */,
+				179EE89E2986586F002D0F02 /* MahdiPresenter.swift in Sources */,
+				179EE8A22986586F002D0F02 /* MahdiViewController.swift in Sources */,
 				BBA9507F2986541400CFA1DC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
