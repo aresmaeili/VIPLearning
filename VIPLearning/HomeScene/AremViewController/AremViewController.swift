@@ -11,17 +11,23 @@
 import UIKit
 
 protocol AremDisplayLogic: AnyObject {
-    func showNextName(name: String) 
+    func showNextName(viewModel: AremViewModel, data: AremModel)
+    func showDetail(viewModel: ViewModel)
 }
 
 class AremViewController: UIViewController {
     var interactor: (AremBusinessLogic & AremDataStore)?
     var router: AremRoutingLogic?
-    
+        
+    @IBOutlet weak var detailButton: UIButton!
     @IBOutlet weak var actButton: UIButton!
     @IBOutlet weak var TitleLabel: UILabel!
     @IBAction func actButonAction(_ sender: Any) {
        interactor?.getDataFromJson()
+    }
+    
+    @IBAction func detailButtonAction(_ sender: Any) {
+        interactor?.getRoutingData()
     }
     
     override func viewDidLoad() {
@@ -33,15 +39,18 @@ class AremViewController: UIViewController {
 
 // MARK: - Display Logic Functions
 extension AremViewController: AremDisplayLogic {
-    func showNextName(name: String) {
-        TitleLabel.text = name
-        router?.
+    func showNextName(viewModel: AremViewModel, data: AremModel) {
+        TitleLabel.text = viewModel.name
+    }
+
+    func showDetail(viewModel: ViewModel) {
+        router?.navToDetails(data: viewModel)
     }
 }
 
 // MARK: - Private Functions
 extension AremViewController {
     private func setupView() {
-        
+        interactor?.getDataFromJson()
     }
 }

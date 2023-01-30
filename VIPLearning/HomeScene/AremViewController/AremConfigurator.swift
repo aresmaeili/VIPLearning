@@ -17,25 +17,24 @@ protocol AremConfigurator {
 
 final class AremDefaultConfigurator {
     private var sceneFactory: SceneFactory
-    
-    init(sceneFactory: SceneFactory) {
+    private var service: NetworkProtocol
+    init(sceneFactory: SceneFactory,service: NetworkProtocol) {
         self.sceneFactory = sceneFactory
+        self.service = service
     }
 }
 
 extension AremDefaultConfigurator: AremConfigurator {
     func configure() -> AremViewController {
         let viewController = UIStoryboard(name: "Arem", bundle: nil).instantiateViewController(withIdentifier: "AremViewController") as! AremViewController
-
+        // DI
         let service: NetworkProtocol = Network()
         let worker = AremWorker(service: service)
-        let interactor = AremInteractor()
-        let presenter = AremPresenter()
-        let router = AremRouter(sceneFactory: sceneFactory)
         
-        router.viewController = viewController
-        router.dataStore = interactor
-        presenter.viewController = viewController
+        let interactor = AremInteractor()
+        let presenter = AremPresenter(viewController: viewController)
+        let router = AremRouter(sceneFactory: sceneFactory, viewController: viewController)
+        
         interactor.presenter = presenter
         interactor.worker = worker
         viewController.interactor = interactor

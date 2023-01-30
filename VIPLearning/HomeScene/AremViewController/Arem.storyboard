@@ -16,27 +16,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Rvf-Sn-cfj">
-                                <rect key="frame" x="96.666666666666686" y="338.66666666666669" width="200" height="200.00000000000006"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Rvf-Sn-cfj">
+                                <rect key="frame" x="46.666666666666657" y="407.33333333333331" width="300" height="62.666666666666686"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqi-OK-2c1">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="96"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSZ-to-Bp1">
-                                        <rect key="frame" x="0.0" y="104" width="200" height="96"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="XXXX"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Next Person"/>
                                         <connections>
                                             <action selector="actButonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Fom-Af-cpc"/>
                                         </connections>
                                     </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="AbJ-f4-XOo">
+                                        <rect key="frame" x="0.0" y="34.333333333333371" width="300" height="28.333333333333329"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqi-OK-2c1">
+                                                <rect key="frame" x="0.0" y="0.0" width="7.666666666666667" height="28.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1m-ei-e7q">
+                                                <rect key="frame" x="200" y="0.0" width="100" height="28.333333333333332"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="More Details">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="0.0"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="detailButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Wzs-rK-AUh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="iH7-4Z-Xf4"/>
-                                    <constraint firstAttribute="width" constant="200" id="pIc-qI-JVp"/>
+                                    <constraint firstAttribute="width" constant="300" id="pIc-qI-JVp"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -50,6 +64,7 @@
                     <connections>
                         <outlet property="TitleLabel" destination="Uqi-OK-2c1" id="1nk-an-HMZ"/>
                         <outlet property="actButton" destination="sSZ-to-Bp1" id="la0-w5-Vqs"/>
+                        <outlet property="detailButton" destination="Q1m-ei-e7q" id="nt0-nt-wsN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

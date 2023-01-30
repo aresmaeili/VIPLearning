@@ -11,8 +11,7 @@
 import UIKit
 
 protocol AremRoutingLogic {
-    
-}
+    func navToDetails(data: ViewModel)}
 
 protocol AremDataPassing {
     var dataStore: AremDataStore? { get }
@@ -20,7 +19,7 @@ protocol AremDataPassing {
 
 class AremRouter: NSObject, AremRoutingLogic, AremDataPassing {
     private let sceneFactory: SceneFactory
-    init(sceneFactory: SceneFactory) {
+    init(sceneFactory: SceneFactory , viewController: AremViewController) {
         self.sceneFactory = sceneFactory
     }
     
@@ -28,5 +27,10 @@ class AremRouter: NSObject, AremRoutingLogic, AremDataPassing {
     weak var viewController: AremViewController?
     var dataStore: AremDataStore?
     
+    func navToDetails(data: ViewModel) {
+
+        let vc = sceneFactory.navToDetailsVc(data: data)
+        sceneFactory.navigationController.pushViewController(vc, animated: true)
+    }
     
 }

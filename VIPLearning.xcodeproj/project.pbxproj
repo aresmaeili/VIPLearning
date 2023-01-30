@@ -7,19 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		179EE89E2986586F002D0F02 /* MahdiPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179EE8972986586F002D0F02 /* MahdiPresenter.swift */; };
-		179EE89F2986586F002D0F02 /* MahdiWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179EE8982986586F002D0F02 /* MahdiWorker.swift */; };
-		179EE8A02986586F002D0F02 /* MahdiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179EE8992986586F002D0F02 /* MahdiRouter.swift */; };
-		179EE8A12986586F002D0F02 /* MahdiModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179EE89A2986586F002D0F02 /* MahdiModels.swift */; };
-		179EE8A22986586F002D0F02 /* MahdiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179EE89B2986586F002D0F02 /* MahdiViewController.swift */; };
-		179EE8A32986586F002D0F02 /* MahdiInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179EE89C2986586F002D0F02 /* MahdiInteractor.swift */; };
-		179EE8A42986586F002D0F02 /* MahdiConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179EE89D2986586F002D0F02 /* MahdiConfigurator.swift */; };
-		179EE8A62986588A002D0F02 /* SceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179EE8A52986588A002D0F02 /* SceneFactory.swift */; };
+		179EE8A62986588A002D0F02 /* HomeSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179EE8A52986588A002D0F02 /* HomeSceneFactory.swift */; };
 		179EE8A929866005002D0F02 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179EE8A829866005002D0F02 /* Network.swift */; };
 		BB7FC2FE2986592400C602F4 /* AremPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FC2F72986592400C602F4 /* AremPresenter.swift */; };
 		BB7FC2FF2986592400C602F4 /* AremWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FC2F82986592400C602F4 /* AremWorker.swift */; };
 		BB7FC3002986592400C602F4 /* AremRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FC2F92986592400C602F4 /* AremRouter.swift */; };
-		BB7FC3012986592400C602F4 /* AremModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FC2FA2986592400C602F4 /* AremModels.swift */; };
 		BB7FC3022986592400C602F4 /* AremViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FC2FB2986592400C602F4 /* AremViewController.swift */; };
 		BB7FC3032986592400C602F4 /* AremInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FC2FC2986592400C602F4 /* AremInteractor.swift */; };
 		BB7FC3042986592400C602F4 /* AremConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7FC2FD2986592400C602F4 /* AremConfigurator.swift */; };
@@ -32,22 +24,24 @@
 		BBA950842986541400CFA1DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBA950822986541400CFA1DC /* Main.storyboard */; };
 		BBA950862986541500CFA1DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBA950852986541500CFA1DC /* Assets.xcassets */; };
 		BBA950892986541500CFA1DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBA950872986541500CFA1DC /* LaunchScreen.storyboard */; };
+		BBBF87D92987AD7D006593C2 /* MainSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBF87D82987AD7D006593C2 /* MainSceneFactory.swift */; };
+		BBBF87DB2987AD8F006593C2 /* SceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBF87DA2987AD8F006593C2 /* SceneFactory.swift */; };
+		BBBF87E62987B311006593C2 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBF87DF2987B311006593C2 /* DetailPresenter.swift */; };
+		BBBF87E72987B311006593C2 /* DetailWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBF87E02987B311006593C2 /* DetailWorker.swift */; };
+		BBBF87E82987B311006593C2 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBF87E12987B311006593C2 /* DetailRouter.swift */; };
+		BBBF87E92987B311006593C2 /* DetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBF87E22987B311006593C2 /* DetailModels.swift */; };
+		BBBF87EA2987B311006593C2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBF87E32987B311006593C2 /* DetailViewController.swift */; };
+		BBBF87EB2987B311006593C2 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBF87E42987B311006593C2 /* DetailInteractor.swift */; };
+		BBBF87EC2987B311006593C2 /* DetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBF87E52987B311006593C2 /* DetailConfigurator.swift */; };
+		BBBF87EE2987B40D006593C2 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBBF87ED2987B40D006593C2 /* Detail.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		179EE8972986586F002D0F02 /* MahdiPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MahdiPresenter.swift; sourceTree = "<group>"; };
-		179EE8982986586F002D0F02 /* MahdiWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MahdiWorker.swift; sourceTree = "<group>"; };
-		179EE8992986586F002D0F02 /* MahdiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MahdiRouter.swift; sourceTree = "<group>"; };
-		179EE89A2986586F002D0F02 /* MahdiModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MahdiModels.swift; sourceTree = "<group>"; };
-		179EE89B2986586F002D0F02 /* MahdiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MahdiViewController.swift; sourceTree = "<group>"; };
-		179EE89C2986586F002D0F02 /* MahdiInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MahdiInteractor.swift; sourceTree = "<group>"; };
-		179EE89D2986586F002D0F02 /* MahdiConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MahdiConfigurator.swift; sourceTree = "<group>"; };
-		179EE8A52986588A002D0F02 /* SceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFactory.swift; sourceTree = "<group>"; };
+		179EE8A52986588A002D0F02 /* HomeSceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneFactory.swift; sourceTree = "<group>"; };
 		179EE8A829866005002D0F02 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		BB7FC2F72986592400C602F4 /* AremPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AremPresenter.swift; sourceTree = "<group>"; };
 		BB7FC2F82986592400C602F4 /* AremWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AremWorker.swift; sourceTree = "<group>"; };
 		BB7FC2F92986592400C602F4 /* AremRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AremRouter.swift; sourceTree = "<group>"; };
-		BB7FC2FA2986592400C602F4 /* AremModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AremModels.swift; sourceTree = "<group>"; };
 		BB7FC2FB2986592400C602F4 /* AremViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AremViewController.swift; sourceTree = "<group>"; };
 		BB7FC2FC2986592400C602F4 /* AremInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AremInteractor.swift; sourceTree = "<group>"; };
 		BB7FC2FD2986592400C602F4 /* AremConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AremConfigurator.swift; sourceTree = "<group>"; };
@@ -62,6 +56,16 @@
 		BBA950852986541500CFA1DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBA950882986541500CFA1DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBA9508A2986541500CFA1DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBBF87D82987AD7D006593C2 /* MainSceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneFactory.swift; sourceTree = "<group>"; };
+		BBBF87DA2987AD8F006593C2 /* SceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFactory.swift; sourceTree = "<group>"; };
+		BBBF87DF2987B311006593C2 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		BBBF87E02987B311006593C2 /* DetailWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWorker.swift; sourceTree = "<group>"; };
+		BBBF87E12987B311006593C2 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		BBBF87E22987B311006593C2 /* DetailModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModels.swift; sourceTree = "<group>"; };
+		BBBF87E32987B311006593C2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BBBF87E42987B311006593C2 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		BBBF87E52987B311006593C2 /* DetailConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailConfigurator.swift; sourceTree = "<group>"; };
+		BBBF87ED2987B40D006593C2 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,34 +79,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		179EE89629865840002D0F02 /* Mahdi */ = {
+		BB7FC2F6298658F800C602F4 /* AremViewController */ = {
 			isa = PBXGroup;
 			children = (
-				179EE8972986586F002D0F02 /* MahdiPresenter.swift */,
-				179EE8982986586F002D0F02 /* MahdiWorker.swift */,
-				179EE8992986586F002D0F02 /* MahdiRouter.swift */,
-				179EE89A2986586F002D0F02 /* MahdiModels.swift */,
-				179EE89B2986586F002D0F02 /* MahdiViewController.swift */,
-				179EE89C2986586F002D0F02 /* MahdiInteractor.swift */,
-				179EE89D2986586F002D0F02 /* MahdiConfigurator.swift */,
-			);
-			path = Mahdi;
-			sourceTree = "<group>";
-		};
-		BB7FC2F6298658F800C602F4 /* AREM */ = {
-			isa = PBXGroup;
-			children = (
+				BB7FC30929865F7600C602F4 /* AremModel.swift */,
+				BB7FC2FD2986592400C602F4 /* AremConfigurator.swift */,
+				BB7FC2FB2986592400C602F4 /* AremViewController.swift */,
+				BB7FC30529865A1D00C602F4 /* Arem.storyboard */,
+				BB7FC2FC2986592400C602F4 /* AremInteractor.swift */,
 				BB7FC2F72986592400C602F4 /* AremPresenter.swift */,
 				BB7FC2F82986592400C602F4 /* AremWorker.swift */,
 				BB7FC2F92986592400C602F4 /* AremRouter.swift */,
-				BB7FC2FA2986592400C602F4 /* AremModels.swift */,
-				BB7FC2FB2986592400C602F4 /* AremViewController.swift */,
-				BB7FC2FC2986592400C602F4 /* AremInteractor.swift */,
-				BB7FC2FD2986592400C602F4 /* AremConfigurator.swift */,
-				BB7FC30529865A1D00C602F4 /* Arem.storyboard */,
-				BB7FC30929865F7600C602F4 /* AremModel.swift */,
 			);
-			path = AREM;
+			path = AremViewController;
 			sourceTree = "<group>";
 		};
 		BBA950702986541400CFA1DC = {
@@ -124,9 +113,8 @@
 		BBA9507B2986541400CFA1DC /* VIPLearning */ = {
 			isa = PBXGroup;
 			children = (
-				179EE89629865840002D0F02 /* Mahdi */,
-				179EE8A52986588A002D0F02 /* SceneFactory.swift */,
-				BB7FC2F6298658F800C602F4 /* AREM */,
+				BBBF87D72987AD6B006593C2 /* MainSceneFactory */,
+				BBBF87DC2987ADAD006593C2 /* HomeScene */,
 				BBA9507C2986541400CFA1DC /* AppDelegate.swift */,
 				BBA9507E2986541400CFA1DC /* SceneDelegate.swift */,
 				BBA950802986541400CFA1DC /* ViewController.swift */,
@@ -138,6 +126,48 @@
 				BB7FC30729865F3800C602F4 /* data.json */,
 			);
 			path = VIPLearning;
+			sourceTree = "<group>";
+		};
+		BBBF87D72987AD6B006593C2 /* MainSceneFactory */ = {
+			isa = PBXGroup;
+			children = (
+				BBBF87DA2987AD8F006593C2 /* SceneFactory.swift */,
+				BBBF87D82987AD7D006593C2 /* MainSceneFactory.swift */,
+			);
+			path = MainSceneFactory;
+			sourceTree = "<group>";
+		};
+		BBBF87DC2987ADAD006593C2 /* HomeScene */ = {
+			isa = PBXGroup;
+			children = (
+				BBBF87DD2987ADB7006593C2 /* SceneFactory */,
+				BB7FC2F6298658F800C602F4 /* AremViewController */,
+				BBBF87DE2987B2E6006593C2 /* DetailViewController */,
+			);
+			path = HomeScene;
+			sourceTree = "<group>";
+		};
+		BBBF87DD2987ADB7006593C2 /* SceneFactory */ = {
+			isa = PBXGroup;
+			children = (
+				179EE8A52986588A002D0F02 /* HomeSceneFactory.swift */,
+			);
+			path = SceneFactory;
+			sourceTree = "<group>";
+		};
+		BBBF87DE2987B2E6006593C2 /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BBBF87E22987B311006593C2 /* DetailModels.swift */,
+				BBBF87E52987B311006593C2 /* DetailConfigurator.swift */,
+				BBBF87E32987B311006593C2 /* DetailViewController.swift */,
+				BBBF87ED2987B40D006593C2 /* Detail.storyboard */,
+				BBBF87E42987B311006593C2 /* DetailInteractor.swift */,
+				BBBF87DF2987B311006593C2 /* DetailPresenter.swift */,
+				BBBF87E02987B311006593C2 /* DetailWorker.swift */,
+				BBBF87E12987B311006593C2 /* DetailRouter.swift */,
+			);
+			path = DetailViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +232,7 @@
 				BBA950862986541500CFA1DC /* Assets.xcassets in Resources */,
 				BBA950842986541400CFA1DC /* Main.storyboard in Resources */,
 				BB7FC30829865F3800C602F4 /* data.json in Resources */,
+				BBBF87EE2987B40D006593C2 /* Detail.storyboard in Resources */,
 				BB7FC30629865A1D00C602F4 /* Arem.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,24 +244,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				179EE8A42986586F002D0F02 /* MahdiConfigurator.swift in Sources */,
-				179EE8A62986588A002D0F02 /* SceneFactory.swift in Sources */,
+				179EE8A62986588A002D0F02 /* HomeSceneFactory.swift in Sources */,
 				179EE8A929866005002D0F02 /* Network.swift in Sources */,
-				BB7FC3012986592400C602F4 /* AremModels.swift in Sources */,
 				BB7FC30A29865F7600C602F4 /* AremModel.swift in Sources */,
 				BB7FC3042986592400C602F4 /* AremConfigurator.swift in Sources */,
 				BBA950812986541400CFA1DC /* ViewController.swift in Sources */,
-				179EE89F2986586F002D0F02 /* MahdiWorker.swift in Sources */,
-				179EE8A12986586F002D0F02 /* MahdiModels.swift in Sources */,
-				179EE8A32986586F002D0F02 /* MahdiInteractor.swift in Sources */,
-				179EE8A02986586F002D0F02 /* MahdiRouter.swift in Sources */,
 				BBA9507D2986541400CFA1DC /* AppDelegate.swift in Sources */,
-				179EE89E2986586F002D0F02 /* MahdiPresenter.swift in Sources */,
-				179EE8A22986586F002D0F02 /* MahdiViewController.swift in Sources */,
 				BB7FC2FF2986592400C602F4 /* AremWorker.swift in Sources */,
 				BB7FC3002986592400C602F4 /* AremRouter.swift in Sources */,
+				BBBF87E62987B311006593C2 /* DetailPresenter.swift in Sources */,
+				BBBF87D92987AD7D006593C2 /* MainSceneFactory.swift in Sources */,
+				BBBF87EA2987B311006593C2 /* DetailViewController.swift in Sources */,
+				BBBF87EB2987B311006593C2 /* DetailInteractor.swift in Sources */,
+				BBBF87E72987B311006593C2 /* DetailWorker.swift in Sources */,
+				BBBF87DB2987AD8F006593C2 /* SceneFactory.swift in Sources */,
 				BBA9507F2986541400CFA1DC /* SceneDelegate.swift in Sources */,
 				BB7FC3032986592400C602F4 /* AremInteractor.swift in Sources */,
+				BBBF87EC2987B311006593C2 /* DetailConfigurator.swift in Sources */,
+				BBBF87E92987B311006593C2 /* DetailModels.swift in Sources */,
+				BBBF87E82987B311006593C2 /* DetailRouter.swift in Sources */,
 				BB7FC2FE2986592400C602F4 /* AremPresenter.swift in Sources */,
 				BB7FC3022986592400C602F4 /* AremViewController.swift in Sources */,
 			);
