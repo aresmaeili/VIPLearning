@@ -101,7 +101,6 @@
 				BB7FC2FD2986592400C602F4 /* AremConfigurator.swift */,
 				BB7FC30529865A1D00C602F4 /* Arem.storyboard */,
 				BB7FC30929865F7600C602F4 /* AremModel.swift */,
-				BB7FC30729865F3800C602F4 /* data.json */,
 			);
 			path = AREM;
 			sourceTree = "<group>";
@@ -136,6 +135,7 @@
 				BBA950872986541500CFA1DC /* LaunchScreen.storyboard */,
 				BBA9508A2986541500CFA1DC /* Info.plist */,
 				179EE8A829866005002D0F02 /* Network.swift */,
+				BB7FC30729865F3800C602F4 /* data.json */,
 			);
 			path = VIPLearning;
 			sourceTree = "<group>";

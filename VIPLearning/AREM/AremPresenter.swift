@@ -11,10 +11,21 @@
 import UIKit
 
 protocol AremPresentationLogic {
-    
+    func getPersonName(data: aremDatas)
 }
 
 class AremPresenter: AremPresentationLogic {
     // MARK: - Properties
     weak var viewController: AremDisplayLogic?
+    private var index = -1
+    
+    func getPersonName(data: aremDatas) {
+        if index != data.count {
+            index += 1
+        } else {
+            index = 0
+        }
+        viewController?.showNextName(name: data[index].name)
+    }
+    
 }

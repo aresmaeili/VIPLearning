@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Arem View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AremViewController" id="Y6W-OH-hqX" customClass="AremViewController" customModule="VIPLearning" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,6 +29,9 @@
                                         <rect key="frame" x="0.0" y="104" width="200" height="96"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="XXXX"/>
+                                        <connections>
+                                            <action selector="actButonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Fom-Af-cpc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -44,10 +47,14 @@
                             <constraint firstItem="Rvf-Sn-cfj" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="tbM-TA-jfH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="TitleLabel" destination="Uqi-OK-2c1" id="1nk-an-HMZ"/>
+                        <outlet property="actButton" destination="sSZ-to-Bp1" id="la0-w5-Vqs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="5"/>
+            <point key="canvasLocation" x="114" y="-16"/>
         </scene>
     </scenes>
     <resources>

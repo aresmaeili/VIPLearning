@@ -13,6 +13,8 @@
 import Foundation
 
 // MARK: - WelcomeElement
+typealias aremDatas = [AremModel]
+
 struct AremModel: Codable {
     let id, name: String
     let alternateNames: [String]

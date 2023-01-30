@@ -11,16 +11,19 @@
 import UIKit
 
 protocol AremWorkerLogic {
-    
+    func getData() -> aremDatas
 }
 
 class AremWorker: AremWorkerLogic {
-     let service: SomeNetworkServiceProtocol
+     let service: NetworkProtocol
     
-     init(service: SomeNetworkServiceProtocol) {
+     init(service: NetworkProtocol) {
          self.service = service
      }
 
     // MARK: - Methods
+    func getData() -> aremDatas {
+        service.createDataFromJson(with: "data")
+    }
 
 }

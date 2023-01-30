@@ -15,7 +15,7 @@ protocol AremBusinessLogic {
 }
 
 protocol AremDataStore {
-    
+    func getDataFromJson()
 }
 
 class AremInteractor: AremBusinessLogic, AremDataStore {
@@ -23,4 +23,8 @@ class AremInteractor: AremBusinessLogic, AremDataStore {
     var presenter: AremPresentationLogic?
     var worker: AremWorkerLogic?
     
+    func getDataFromJson(){
+        guard let data = worker?.getData() else { fatalError("No data")}
+        presenter?.getPersonName(data: data)
+    }
 }

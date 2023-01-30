@@ -19,12 +19,14 @@ protocol AremDataPassing {
 }
 
 class AremRouter: NSObject, AremRoutingLogic, AremDataPassing {
-    private let sceneFactory: SomeSceneFactory
-    init(sceneFactory: SomeSceneFactory) {
+    private let sceneFactory: SceneFactory
+    init(sceneFactory: SceneFactory) {
         self.sceneFactory = sceneFactory
     }
     
     // MARK: - Properties
     weak var viewController: AremViewController?
     var dataStore: AremDataStore?
+    
+    
 }
