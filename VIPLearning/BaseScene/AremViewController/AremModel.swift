@@ -12,6 +12,21 @@
 
 import Foundation
 
+
+struct FirstViewModel {
+    var name: String
+}
+
+struct ViewModel {
+    var name: String
+    var gender: String
+    var house: String
+    var birth: String
+    var year: String
+    var alive: Bool
+}
+
+
 // MARK: - WelcomeElement
 typealias FirstDatas = [FirstModel]
 

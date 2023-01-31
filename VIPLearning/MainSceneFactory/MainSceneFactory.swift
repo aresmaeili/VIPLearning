@@ -24,10 +24,10 @@ class MainSceneFactory: SceneFactory {
         baseSceneFactory.start()
     }
     
-    func navToDetailsVc(data: ViewModel) {
-        let baseSceneFactory: SceneFactory = BaseSceneFactory(navigationController: navigationController, service: service)
-        return baseSceneFactory.navToDetailsVc(data: data)
-    }
+//    func navToDetailsVc(data: ViewModel) {
+//        let baseSceneFactory: SceneFactory = BaseSceneFactory(navigationController: navigationController, service: service)
+//        baseSceneFactory.navToDetailsVc(data: data)
+//    }
     
     func navToDetailsVc(data: ViewModel) -> DetailViewController {
         let baseSceneFactory = BaseSceneFactory(navigationController: navigationController, service: service)

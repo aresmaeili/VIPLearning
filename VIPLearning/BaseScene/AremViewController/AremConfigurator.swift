@@ -27,10 +27,7 @@ final class FirstDefaultConfigurator {
 extension FirstDefaultConfigurator: FirstConfigurator {
     func configure() -> FirstViewController {
         let viewController = UIStoryboard(name: "First", bundle: nil).instantiateViewController(withIdentifier: "FirstViewController") as! FirstViewController
-        // DI
-        let service: NetworkProtocol = Network()
         let worker = FirstWorker(service: service)
-        
         let interactor = FirstInteractor()
         let presenter = FirstPresenter(viewController: viewController)
         let router = FirstRouter(sceneFactory: sceneFactory, viewController: viewController)
