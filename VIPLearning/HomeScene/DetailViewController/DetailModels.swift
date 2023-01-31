@@ -14,7 +14,7 @@ enum DetailModels {
     // MARK: - Use Cases
     enum PersonData {
         struct Request {}
-        typealias Response = AremModel
+        typealias Response = FirstModel
         struct ViewModel {
             var name: String
             var gender: String

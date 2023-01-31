@@ -13,9 +13,9 @@
 import Foundation
 
 // MARK: - WelcomeElement
-typealias aremDatas = [AremModel]
+typealias FirstDatas = [FirstModel]
 
-struct AremModel: Codable {
+struct FirstModel: Codable {
     let id, name: String
     let alternateNames: [String]
     let species: Species

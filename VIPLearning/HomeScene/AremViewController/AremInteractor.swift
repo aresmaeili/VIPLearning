@@ -10,19 +10,19 @@
 
 import UIKit
 
-protocol AremBusinessLogic {
+protocol FirstBusinessLogic {
 
 }
 
-protocol AremDataStore {
+protocol FirstDataStore {
     func getDataFromJson()
     func getRoutingData()
 }
 
-class AremInteractor {
+class FirstInteractor {
     // MARK: - Properties
-    var presenter: AremPresentationLogic?
-    var worker: AremWorkerLogic?
+    var presenter: FirstPresentationLogic?
+    var worker: FirstWorkerLogic?
     
     private var index = -1
 
@@ -35,7 +35,7 @@ class AremInteractor {
     }
 }
 
-extension AremInteractor: AremBusinessLogic, AremDataStore {
+extension FirstInteractor: FirstBusinessLogic, FirstDataStore {
     
     func getDataFromJson(){
         guard let data = worker?.getData() else { fatalError("No data")}

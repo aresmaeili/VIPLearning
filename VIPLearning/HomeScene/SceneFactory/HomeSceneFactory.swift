@@ -18,7 +18,7 @@ class HomeSceneFactory: SceneFactory {
     }
     
     func start() {
-        let viewController = createAremScene()
+        let viewController = createFirstScene()
         navigationController.pushViewController(viewController, animated: true)
     }
     
@@ -27,10 +27,10 @@ class HomeSceneFactory: SceneFactory {
         return viewController
     }
     
-    func createAremScene() -> AremViewController {
-        let aremConfigure = AremDefaultConfigurator(sceneFactory: self, service: service)
-        let aremVC = aremConfigure.configure()
-        return aremVC
+    func createFirstScene() -> FirstViewController {
+        let firstConfigure = FirstDefaultConfigurator(sceneFactory: self, service: service)
+        let firstVC = firstConfigure.configure()
+        return firstVC
     }
     
     func createMehdiScene(data: ViewModel) -> DetailViewController {

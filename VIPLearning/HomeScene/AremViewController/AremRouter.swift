@@ -10,22 +10,22 @@
 
 import UIKit
 
-protocol AremRoutingLogic {
+protocol FirstRoutingLogic {
     func navToDetails(data: ViewModel)}
 
-protocol AremDataPassing {
-    var dataStore: AremDataStore? { get }
+protocol FirstDataPassing {
+    var dataStore: FirstDataStore? { get }
 }
 
-class AremRouter: NSObject, AremRoutingLogic, AremDataPassing {
+class FirstRouter: NSObject, FirstRoutingLogic, FirstDataPassing {
     private let sceneFactory: SceneFactory
-    init(sceneFactory: SceneFactory , viewController: AremViewController) {
+    init(sceneFactory: SceneFactory , viewController: FirstViewController) {
         self.sceneFactory = sceneFactory
     }
     
     // MARK: - Properties
-    weak var viewController: AremViewController?
-    var dataStore: AremDataStore?
+    weak var viewController: FirstViewController?
+    var dataStore: FirstDataStore?
     
     func navToDetails(data: ViewModel) {
 

@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="-79" y="5"/>
         </scene>
-        <!--Arem View Controller-->
+        <!--First View Controller-->
         <scene sceneID="OMQ-3E-oer">
             <objects>
-                <viewController id="Xpp-oo-Jt6" customClass="AremViewController" customModule="VIPLearning" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Xpp-oo-Jt6" customClass="FirstViewController" customModule="VIPLearning" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A7e-Yp-ChJ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

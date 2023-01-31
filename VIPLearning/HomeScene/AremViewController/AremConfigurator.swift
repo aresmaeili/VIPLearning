@@ -11,11 +11,11 @@
 import Foundation
 import UIKit.UIViewController
 
-protocol AremConfigurator {
-    func configure() -> AremViewController
+protocol FirstConfigurator {
+    func configure() -> FirstViewController
 }
 
-final class AremDefaultConfigurator {
+final class FirstDefaultConfigurator {
     private var sceneFactory: SceneFactory
     private var service: NetworkProtocol
     init(sceneFactory: SceneFactory,service: NetworkProtocol) {
@@ -24,16 +24,16 @@ final class AremDefaultConfigurator {
     }
 }
 
-extension AremDefaultConfigurator: AremConfigurator {
-    func configure() -> AremViewController {
-        let viewController = UIStoryboard(name: "Arem", bundle: nil).instantiateViewController(withIdentifier: "AremViewController") as! AremViewController
+extension FirstDefaultConfigurator: FirstConfigurator {
+    func configure() -> FirstViewController {
+        let viewController = UIStoryboard(name: "First", bundle: nil).instantiateViewController(withIdentifier: "FirstViewController") as! FirstViewController
         // DI
         let service: NetworkProtocol = Network()
-        let worker = AremWorker(service: service)
+        let worker = FirstWorker(service: service)
         
-        let interactor = AremInteractor()
-        let presenter = AremPresenter(viewController: viewController)
-        let router = AremRouter(sceneFactory: sceneFactory, viewController: viewController)
+        let interactor = FirstInteractor()
+        let presenter = FirstPresenter(viewController: viewController)
+        let router = FirstRouter(sceneFactory: sceneFactory, viewController: viewController)
         
         interactor.presenter = presenter
         interactor.worker = worker

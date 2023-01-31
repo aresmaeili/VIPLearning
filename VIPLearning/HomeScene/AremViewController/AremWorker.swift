@@ -10,11 +10,11 @@
 
 import UIKit
 
-protocol AremWorkerLogic {
-    func getData() -> aremDatas
+protocol FirstWorkerLogic {
+    func getData() -> FirstDatas
 }
 
-class AremWorker: AremWorkerLogic {
+class FirstWorker: FirstWorkerLogic {
      let service: NetworkProtocol
     
      init(service: NetworkProtocol) {
@@ -22,7 +22,7 @@ class AremWorker: AremWorkerLogic {
      }
 
     // MARK: - Methods
-    func getData() -> aremDatas {
+    func getData() -> FirstDatas {
         service.createDataFromJson(with: "data")
     }
 
