@@ -114,15 +114,9 @@
 			isa = PBXGroup;
 			children = (
 				BBBF87D72987AD6B006593C2 /* MainSceneFactory */,
-				BBBF87DC2987ADAD006593C2 /* HomeScene */,
-				BBA9507C2986541400CFA1DC /* AppDelegate.swift */,
-				BBA9507E2986541400CFA1DC /* SceneDelegate.swift */,
-				BBA950802986541400CFA1DC /* ViewController.swift */,
-				BBA950822986541400CFA1DC /* Main.storyboard */,
-				BBA950852986541500CFA1DC /* Assets.xcassets */,
-				BBA950872986541500CFA1DC /* LaunchScreen.storyboard */,
+				BBBF87DC2987ADAD006593C2 /* BaseScene */,
+				BBC0DA51298907370016D1E6 /* Helpers */,
 				BBA9508A2986541500CFA1DC /* Info.plist */,
-				179EE8A829866005002D0F02 /* Network.swift */,
 				BB7FC30729865F3800C602F4 /* data.json */,
 			);
 			path = VIPLearning;
@@ -137,14 +131,14 @@
 			path = MainSceneFactory;
 			sourceTree = "<group>";
 		};
-		BBBF87DC2987ADAD006593C2 /* HomeScene */ = {
+		BBBF87DC2987ADAD006593C2 /* BaseScene */ = {
 			isa = PBXGroup;
 			children = (
 				BBBF87DD2987ADB7006593C2 /* SceneFactory */,
 				BB7FC2F6298658F800C602F4 /* AremViewController */,
 				BBBF87DE2987B2E6006593C2 /* DetailViewController */,
 			);
-			path = HomeScene;
+			path = BaseScene;
 			sourceTree = "<group>";
 		};
 		BBBF87DD2987ADB7006593C2 /* SceneFactory */ = {
@@ -168,6 +162,20 @@
 				BBBF87E12987B311006593C2 /* DetailRouter.swift */,
 			);
 			path = DetailViewController;
+			sourceTree = "<group>";
+		};
+		BBC0DA51298907370016D1E6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BBA9507C2986541400CFA1DC /* AppDelegate.swift */,
+				BBA9507E2986541400CFA1DC /* SceneDelegate.swift */,
+				179EE8A829866005002D0F02 /* Network.swift */,
+				BBA950802986541400CFA1DC /* ViewController.swift */,
+				BBA950822986541400CFA1DC /* Main.storyboard */,
+				BBA950852986541500CFA1DC /* Assets.xcassets */,
+				BBA950872986541500CFA1DC /* LaunchScreen.storyboard */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

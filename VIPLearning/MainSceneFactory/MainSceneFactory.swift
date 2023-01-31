@@ -20,18 +20,18 @@ class MainSceneFactory: SceneFactory {
     }
     
     func start() {
-        let homeSceneFactory: SceneFactory = HomeSceneFactory(navigationController: navigationController, service: service)
-        homeSceneFactory.start()
+        let baseSceneFactory: SceneFactory = BaseSceneFactory(navigationController: navigationController, service: service)
+        baseSceneFactory.start()
     }
     
     func navToDetailsVc(data: ViewModel) {
-        let homeSceneFactory: SceneFactory = HomeSceneFactory(navigationController: navigationController, service: service)
-        homeSceneFactory.navToDetailsVc(data: data)
+        let baseSceneFactory: SceneFactory = BaseSceneFactory(navigationController: navigationController, service: service)
+        baseSceneFactory.navToDetailsVc(data: data)
     }
     
     func navToDetailsVc(data: ViewModel) -> DetailViewController {
-        let homeSceneFactory = HomeSceneFactory(navigationController: navigationController, service: service)
-        return homeSceneFactory.navToDetailsVc(data: data)
+        let baseSceneFactory = BaseSceneFactory(navigationController: navigationController, service: service)
+        return baseSceneFactory.navToDetailsVc(data: data)
     }
     
 }

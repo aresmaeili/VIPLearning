@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeSceneFactory: SceneFactory {
+class BaseSceneFactory: SceneFactory {
    
     var navigationController: UINavigationController
 
